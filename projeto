@@ -5,36 +5,36 @@ def newRegistration():        #H1
     cadastroAlunos = ['Estudante'] = newStudent
     cadastroAlunos = ['Gmail'] = gmailStudent
 
-    listaAlunos.append(cadastroAlunos)
+    listStudentsRegistration.append(cadastroAlunos)
 
 
 def listStudentsRegistration():      #H2
     listStudentsAZ
 
 def listStudentsAZ():   #H3
-    listaAlunos.sort()
-    print(listaAlunos)
+    listStudentsRegistration.sort()
+    print(listStudentsRegistration)
 
 
 def filterStudentes():   #H4
     filtrarAluno = input(" Insira o nome completo do aluno: ")
     if filtrarAluno == true: 
-        print(filtrarAluno in listaAlunos)
+        print(filtrarAluno in listStudentsRegistration)
 
-    print(listaAlunos.get(filtrarAluno, 'Contato não existente na lista, olha o golpe!'))
+    print(listStudentsRegistration.get(filtrarAluno, 'Contato não existente na lista, olha o golpe!'))
 
 
 def removeStudents():    #H5
 
     alunoRemover = input("Insira o nome do aluno que deseja remover: ")
-    print(listaAlunos.pop(alunoRemover, 'Contato não encontrado na lista'))
+    print(listStudentsRegistration.pop(alunoRemover, 'Contato não encontrado na lista'))
 
 def changeName():    #H6
     listStudentsRegistration
 
 def main():
     listaAlunos = []
-    cadastroAlunos = {'Estudante' : 'Gmail' 
+    cadastroAlunos = {'Estudante' : 'Gmail'}
 
     print("Bem-vindo ao evento técnico\n")
 
@@ -49,7 +49,7 @@ def main():
 
     op = int(input("Insira o número correspondente a função que deseja executar: "))
 
-    if op >= 1 or <= 6:
+    if op:
         if op == 1:
             newRegistration()
         elif op == 2:
